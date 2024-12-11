@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signup-form" method="post">
+                <h1>Create Account</h1>
+                <span>or use your email for registeration</span>
+                <input name="name" type="text" placeholder="Name">
+                <input name="email" type="text" placeholder="Email">
+                <input id="password" name="password" type="password" placeholder="Password">
+                <i class="fa fa-eye" id="togglePassword" aria-hidden="true"></i>
+                <input name="shop_no" type="text" placeholder="Shop No.">
+                <input name="no_of_employees" id="employees" type="text" placeholder="No. of employees">
+                <div id="employee_err"></div>
+                <button type="submit" name="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="signin-form">
+                <div class="sign-in-fields">
+                    <h1>Sign In</h1>
+                    <span>or use your email password</span>
+                    <input name="email" type="text" placeholder="Email">
+                    <input name="password" id="signInPassword" type="password" placeholder="Password">
+                    <i class="fa fa-eye" id="signInTogglePassword" aria-hidden="true"></i>
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
